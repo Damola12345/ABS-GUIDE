@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: abs-guide-deploy
+  namespace: abs-guide
+  labels:
+    app: abs-guide-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: abs-guide-app
+  template:
+    metadata:
+      labels:
+        app: abs-guide-app
+    spec:
+      containers:
+      - name: abs-guide
+        image: damola12345/abs-guide:latest
+        resources:
+          limits:
+            memory: 512Mi
+            cpu: "1"
+          requests:
+            memory: 256Mi
+            cpu: "0.2"
+        ports:
+          - containerPort: 80
