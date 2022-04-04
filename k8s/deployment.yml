@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: abs-guide-deploy
+  name: abs-guide
   namespace: abs-guide
   labels:
-    app: abs-guide-app
+    app: abs-guide
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: abs-guide-app
+      app: abs-guide
   template:
     metadata:
       labels:
-        app: abs-guide-app
+        app: abs-guide
     spec:
       containers:
       - name: abs-guide

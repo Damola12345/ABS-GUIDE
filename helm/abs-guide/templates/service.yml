@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: abs-guide-svc
+  name: abs-guide
   namespace: abs-guide
 spec:
   type: LoadBalancer
   selector:
-    app: abs-guide-app
+    app: abs-guide
   ports:
     - protocol: TCP
       name: http
