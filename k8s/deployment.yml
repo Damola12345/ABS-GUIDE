@@ -27,3 +27,9 @@ spec:
             cpu: "0.2"
         ports:
           - containerPort: 80
+          # livenessProbe:
+          #   httpGet:
+          #     path: /status
+          #     port: 80
+          #   initialDelaySeconds: 3
+          #   periodSeconds: 3
