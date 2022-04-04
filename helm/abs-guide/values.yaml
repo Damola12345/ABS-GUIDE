@@ -1,0 +1,3 @@
+deployment:
+  image: "damola12345/abs-guide"
+  tag: "latest"
