@@ -10,27 +10,27 @@ Technologies
 Getting Started
 * Follow the following instructions to get a copy of the project running on your local machine.
 
-Installation/Setup
-  1. Clone the repo with - git clone <repo url>
-  2. Change to the project directly - cd ABS-GUIDE
-  3. Build the docker image by running this comannd 
-        1. docker build -t abs-guide .
-        2. docker run -it -p 8081:80 abs-guide
-  4. NOTE - This creates a new container from the image and binds port 80 of the container to port 8081 of the host machine
-  5. Our web server will be up at http://localhost:8081
+## Installation/Setup
+    1. Clone the repo with - git clone <repo url>
+    2. Change to the project directly - cd ABS-GUIDE
+    3. Build the docker image by running this comannd 
+            1. docker build -t abs-guide .
+            2. docker run -it -p 8081:80 abs-guide
+    4. NOTE - This creates a new container from the image and binds port 80 of the container to port 8081 of the host machine
+    5. Our web server will be up at http://localhost:8081
 
 ## Step 2 - CI/CD 
 * GitHub Actions - is a CI/CD platform that allows you to automate build,test,deploy pipeline from GitHub. This goes beyond just Dev0ps 
   and lets you run workflows when other events happen in your repository
 
-  Setup
-  1. checkout
-  2. setup docker buildx
-  3. Dockerhub login
-  4. Docker Buildx to create the builder instance using a BuildKit container under the hood
-  5. Build and push
-  6. Run the pipeline
-  7. view pushed image in your dockerhub account
+## Setup
+    1. checkout
+    2. setup docker buildx
+    3. Dockerhub login
+    4. Docker Buildx to create the builder instance using a BuildKit container under the hood
+    5. Build and push
+    6. Run the pipeline
+    7. view pushed image in your dockerhub account
 
 ## Step 3 - Kubernetes
 * Kubernetes - the de facto technology for container management and orchestration, however once it's up and running, it's highly configurable
@@ -40,9 +40,9 @@ Installation/Setup
   1. Services
   2. Deployments
 
-  Setup
-  1. Change to the project directly - cd k8s/bash
-  2. Automate using bash to create deployment and service
+## Setup
+    1. Change to the project directly - cd k8s/bash
+    2. Automate using bash to create deployment and service
         1. chmod +x script.sh
         2. ./script.sh
         3. minikube service abs-guide-svc --url
