@@ -68,5 +68,13 @@ Installation/Setup
     2. helm list
     ## checkout deployed components
     1. kubectl get all -n abs-guide
+## Value injections for the Chart
+    1. # values.yaml
+        1. change values.yaml
+        2. change deployment.yaml
+    2. # upgrade our release
+        1. helm upgrade abs-guide abs-guide --values ./abs-guide/values.yaml
+    3. # see revision increased
+        1. helm list
 
 
