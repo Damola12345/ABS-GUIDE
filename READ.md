@@ -19,7 +19,7 @@ Installation/Setup
   4. NOTE - This creates a new container from the image and binds port 80 of the container to port 8081 of the host machine
   5. Our web server will be up at http://localhost:8081
 
-Step 2 - CI/CD 
+## Step 2 - CI/CD 
 * GitHub Actions - is a CI/CD platform that allows you to automate build,test,deploy pipeline from GitHub. This goes beyond just Dev0ps 
   and lets you run workflows when other events happen in your repository
 
@@ -32,7 +32,7 @@ Step 2 - CI/CD
   6. Run the pipeline
   7. view pushed image in your dockerhub account
 
-Step 3 - Kubernetes
+## Step 3 - Kubernetes
 * Kubernetes - the de facto technology for container management and orchestration, however once it's up and running, it's highly configurable
   and it serves as the engine for an organisation's modern IT. k8s comes with a capability of automating deployment,scaling & operation of App containers across clusters.
 
@@ -48,7 +48,7 @@ Step 3 - Kubernetes
         3. minikube service abs-guide-svc --url
         4. Our web server will be up at http://xx.x.xxx.xxx:xxxxx
 
-step 4 - Helm
+## step 4 - Helm
 ## install Helm 
     1.you can follow same procedure in the official Helm document (https://helm.sh/docs/intro/install/#from-script)
 ## Create our first Chart
